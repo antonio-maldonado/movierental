@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Menu_principal</class>
+ <widget class="QMainWindow" name="Menu_principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>738</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Menu_principal</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QStackedWidget" name="MenuPeliculas">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>681</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>4</number>
+    </property>
+    <widget class="QWidget" name="ventanaAltaSBajasModificaciones">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <widget class="QLineEdit" name="lineEditPrecioRentaBase">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>130</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditTituloPelicula">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>70</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCodigoPelicula">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Codigo</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Titulo</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>130</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Precio renta</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxPeliculaEstreno">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>60</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pelicula de Estreno</string>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxPeliculaLiquidacion">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>80</y>
+        <width>131</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pelicula de liquidacion</string>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxPeliculaNormal">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>100</y>
+        <width>121</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pelicula Normal</string>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonRegistrarPelicula">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>170</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Registrar Pelicula</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidgetListaPeliculas">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>220</y>
+        <width>581</width>
+        <height>241</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="EliminaPelicula">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>170</y>
+        <width>131</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Eliminar Pelicula</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonModificarPelicula">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>170</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Modificar Pelicula</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBoxCantidadPeliculas">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>100</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>100</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Copias</string>
+      </property>
+     </widget>
+     <zorder>tableWidgetListaPeliculas</zorder>
+     <zorder>lineEditPrecioRentaBase</zorder>
+     <zorder>lineEditTituloPelicula</zorder>
+     <zorder>lineEditCodigoPelicula</zorder>
+     <zorder>label</zorder>
+     <zorder>label_2</zorder>
+     <zorder>label_3</zorder>
+     <zorder>checkBoxPeliculaEstreno</zorder>
+     <zorder>checkBoxPeliculaLiquidacion</zorder>
+     <zorder>checkBoxPeliculaNormal</zorder>
+     <zorder>pushButtonRegistrarPelicula</zorder>
+     <zorder>EliminaPelicula</zorder>
+     <zorder>pushButtonModificarPelicula</zorder>
+     <zorder>spinBoxCantidadPeliculas</zorder>
+     <zorder>label_7</zorder>
+    </widget>
+    <widget class="QWidget" name="ventanaAltaBajaModificacionesdelCliente">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <widget class="QPushButton" name="pushButtonRegistrarCliente">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Registrar Cliente</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonModificarCliente">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>190</y>
+        <width>131</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Modificar Cliente</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonEliminarCliente">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>190</y>
+        <width>131</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Eliminar Cliente</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidgetListaClientes">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>230</y>
+        <width>491</width>
+        <height>221</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCodigoCliente">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>20</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Codigo Cliente</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditNombreCliente">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>50</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nombre Cliente</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditEdad">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>80</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>80</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Edad</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="VentanaNuevaRenta">
+     <widget class="QLineEdit" name="lineEditCodigoClienteParaRenta">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>50</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Codigo Cliente</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonNuevaRenta">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>50</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nueva Renta</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCodigoPeliculaParaRenta">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>160</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Codigo Pelicula</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonAgregarPeliculaRenta">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>160</y>
+        <width>111</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Agregar Pelicula</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditNombreClienteParaLarenta">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>120</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditMuestranumeroNota">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>120</y>
+        <width>31</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>120</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nombre Cliente</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nota de venta #</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidgetPeliculasParaNota">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>220</y>
+        <width>571</width>
+        <height>161</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditMuestraTotalaPagar">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>420</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>420</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Total a Pagar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonfinalizarnota">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>430</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Finalizar nota</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="RentasActivas">
+     <widget class="QTableWidget" name="tableWidgetRentasActivas">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>120</y>
+        <width>551</width>
+        <height>211</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>40</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Rentas Activas</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PeliculasEnNotaDeRenta">
+     <widget class="QLineEdit" name="lineEditNombreClientePeliculasRentadas">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>100</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditNumeroDeNotaPeliculasRentadas">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>60</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidgetPeliculasRentadas">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>160</y>
+        <width>461</width>
+        <height>192</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>60</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nota #</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>100</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cliente:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonRecibirTodasLasPeliculas">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>390</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Recibir Todas Las Peliculas</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonRecibirUnaPelicula">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>410</y>
+        <width>101</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Recibir Pelicula</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonfinalizarconsulta">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>390</y>
+        <width>101</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Finalizar Consulta</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditPeliculaSeleccionadaenNota">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>370</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>370</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pelicula Seleccionda</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>10</y>
+      <width>431</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>imagenes/1450183731-2013-03-16_08-24-56_videoclub.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <zorder>label_8</zorder>
+   <zorder>MenuPeliculas</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>738</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPeliculas">
+    <property name="title">
+     <string>Menu Peliculas</string>
+    </property>
+    <addaction name="actionIr_al_menu"/>
+   </widget>
+   <widget class="QMenu" name="menuMenu_Clientes">
+    <property name="title">
+     <string>Menu Clientes</string>
+    </property>
+    <addaction name="actionIr_al_menu_2"/>
+   </widget>
+   <widget class="QMenu" name="menuMenu_Rentas">
+    <property name="title">
+     <string>Menu Rentas</string>
+    </property>
+    <addaction name="actionRealizar_renta"/>
+    <addaction name="actionVer_Rentas"/>
+   </widget>
+   <widget class="QMenu" name="menuPagina_Principal">
+    <property name="title">
+     <string>Pagina Principal</string>
+    </property>
+    <addaction name="actionVentana_Principal"/>
+   </widget>
+   <addaction name="menuPeliculas"/>
+   <addaction name="menuMenu_Clientes"/>
+   <addaction name="menuMenu_Rentas"/>
+   <addaction name="menuPagina_Principal"/>
+  </widget>
+  <action name="actionIr_al_menu">
+   <property name="text">
+    <string>Ir al menu Peliculas</string>
+   </property>
+  </action>
+  <action name="actionIr_al_menu_2">
+   <property name="text">
+    <string>Ir al menu Clientes</string>
+   </property>
+  </action>
+  <action name="actionVentana_Principal">
+   <property name="text">
+    <string>Ventana Principal</string>
+   </property>
+  </action>
+  <action name="actionRealizar_renta">
+   <property name="text">
+    <string>Realizar renta</string>
+   </property>
+  </action>
+  <action name="actionVer_Rentas">
+   <property name="text">
+    <string>Ver Rentas</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
